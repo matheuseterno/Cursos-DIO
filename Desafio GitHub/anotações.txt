@@ -1,0 +1,2 @@
+Comando usado para realizar um commit: git commit -m "descição do commit"
+Comando usado para subir arquivos para o repositório: git push
