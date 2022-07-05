@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        max-width: 400px;
+    }
+    .item{
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        margin: 5px;
+    }
+    .flex-1{
+        flex: 1;
+    }
+    .flex-2{
+        flex: 2;
+    }
+    .largura{
+        width: 200px;
+    }
+</style>
+<body>
+    <p>Flex 1</p>
+    <div class="container">
+        <div class="item flex-1">AA</div>
+        <div class="item flex-1">B</div>
+        <div class="item flex-1">CEEE</div>
+        <div class="item flex-1">DE</div>
+        <div class="item flex-1">EFI</div>
+    </div>
+    <p>Flex mix</p>
+    <div class="container">
+        <div class="item flex-1">AA</div>
+        <div class="item flex-1">B</div>
+        <div class="item flex-2">CEEE</div>
+        <div class="item flex-2">DE</div>
+        <div class="item flex-2">EFI</div>
+    </div>
+    <p>width ignorado -> basis = 0</p>
+    <div class="container">
+        <div class="item flex-1 largura">AA</div>
+        <div class="item flex-1">B</div>
+        <div class="item flex-1">CEEE</div>
+        <div class="item flex-1">DE</div>
+        <div class="item flex-1">EFI</div>
+    </div>
+</body>
+</html>
