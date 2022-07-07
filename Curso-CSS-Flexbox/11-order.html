@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+</head>
+<style>
+    .container{
+        max-width: 400px;
+        border: 1px solid black;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .item{
+        flex: 1;
+        text-align: center;
+        background-color: yellow;
+        color: black;
+        margin: 5px;
+        font-size: 24px;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .o1{
+        order: 1;
+    }
+    .o2{
+        order: 2;
+    }
+    .o3{
+        order: 3;
+    }
+</style>
+<body>
+    <p>order 0</p>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+    <p>order diferentes</p>
+    <div class="container">
+        <div class="item o3">A</div>
+        <div class="item o1">B</div>
+        <div class="item o2">C</div>
+        <div class="item o1">D</div>
+        <div class="item 02">F</div>
+        <div class="item o3">G</div>
+        <div class="item o3">H</div>
+        <div class="item o3">I</div>
+    </div>
+    <p>order 0</p>
+    <div class="container column">
+        <div class="item o3">A</div>
+        <div class="item o2">B</div>
+        <div class="item o1">C</div>
+        <div class="item o3">D</div>
+        <div class="item o3">F</div>
+        <div class="item o1">G</div>
+        <div class="item o1">H</div>
+        <div class="item o3">I</div>
+    </div>
+</body>
+</html>
